@@ -1,31 +1,30 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A simple Electron SoundCloud client powered by react, redux",
+  "name": "soundcloud-electron",
+  "version": "0.1.0",
+  "description": "A simple SoundCloud client powered by Electron, React, Redux (Webpack, Babel etc...)",
   "main": "main.js",
   "scripts": {
-    "start-electron": "electron main.js",
     "build": "NODE_ENV=production webpack --progress --colors",
-    "build-watch": "webpack --progress --colors --watch",
-    "build-production": "NODE_ENV=production webpack --progress --colors --watch",
-    "start2": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000 & electron main.js"
+    "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000 & electron main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/marcelowa/soundcloud-electron.git"
   },
   "keywords": [
+    "SoundCloud",
     "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "React",
+    "Redux",
+    "Webpack",
+    "Babel"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
+    "url": "https://github.com/marcelowa/soundcloud-electron/issues"
   },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "homepage": "https://github.com/marcelowa/soundcloud-electron",
 
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
