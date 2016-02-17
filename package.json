@@ -4,8 +4,7 @@
   "description": "A simple SoundCloud client powered by Electron, React, Redux (Webpack, Babel etc...)",
   "main": "main.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --progress --colors",
-    "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000 & electron main.js"
+    "start": "electron main.js"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,7 @@
 'use strict';
 
 const electron = require('electron');
+const webpackServer = require('./webpack-server.js');
 // Module to control application life.
 const app = electron.app;
 // Module to create native browser window.
@@ -15,12 +16,12 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 1000, height: 800});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/static/index.html');
+  mainWindow.loadURL('http://localhost:3000');
   //mainWindow.loadURL('file://' + __dirname + '/client/index.html');
   //mainWindow.loadURL('http://localhost:3000');
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // Open the DevTools (uncomment the following lines to open them automatically).
+  //mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
